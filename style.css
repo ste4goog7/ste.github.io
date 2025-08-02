@@ -20,6 +20,21 @@ header {
     padding: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header:hover {
+  background-color: #005f99; /* Slightly darker shade */
+}
+
 section {
   padding: 2rem;
   max-width: 800px;
@@ -28,4 +43,5 @@ section {
   margin-top: 1rem;
   border-radius: 8px;
 }
+
 
