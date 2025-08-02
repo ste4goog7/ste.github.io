@@ -59,3 +59,72 @@ p {
     font-size: 1.125rem;
   }
 }
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007acc;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar .brand-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.navbar .navbar-links li {
+  margin-left: 1rem;
+}
+
+.navbar .navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .toggle-button {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .navbar .navbar-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .navbar .toggle-button {
+    display: block;
+  }
+
+  .navbar.active .navbar-links {
+    display: block;
+  }
+}
+
