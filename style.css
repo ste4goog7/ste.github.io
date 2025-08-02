@@ -3,45 +3,59 @@ body {
   background: #f5f5f5;
   color: #333;
   margin: 0;
+  padding: 0;
+}
+
+/* Container styling for smaller screens */
+header, section {
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 95%;
+  box-sizing: border-box;
 }
 
 header {
   background-color: #007acc;
   color: white;
-  padding: 2rem;
   text-align: center;
-}
-@media (max-width: 600px) {
-  header {
-    padding: 1rem;
-  }
-
-  section {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    font-size: 1.5rem;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-header:hover {
-  background-color: #005f99; /* Slightly darker shade */
-}
-
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  margin-top: 1rem;
   border-radius: 8px;
 }
 
+section {
+  background: white;
+  border-radius: 8px;
+}
 
+/* Responsive Typography */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Optional media query for finer control */
+@media (min-width: 600px) {
+  header, section {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}
